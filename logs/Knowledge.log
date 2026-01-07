@@ -485,3 +485,792 @@
 2026-01-07 09:39:49,187 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 265, Duration: 0ms
 2026-01-07 09:39:49,383 - Knowledge - INFO - Saving knowledge to Redis...
 2026-01-07 09:39:49,616 - Knowledge - INFO - Knowledge saved to Redis successfully
+2026-01-07 10:13:29,777 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-01-07 10:13:30,144 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-01-07 10:13:30,385 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-01-07 10:13:30,535 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-01-07 10:13:31,481 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-07 10:13:31,640 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-01-07 10:13:31,831 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-07 10:13:32,822 - Knowledge - INFO - Persisted knowledge files in /app/data/T0015/303342/b9834xv/realworld-303342/.knowledge have been renamed to use .json
+2026-01-07 10:13:32,984 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:33,151 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:33,494 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:33,678 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:33,857 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/frontend/api.md
+2026-01-07 10:13:34,105 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-07 10:13:34,946 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/frontend/api.md, Duration: 641ms
+2026-01-07 10:13:35,130 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/frontend/api.md
+2026-01-07 10:13:35,322 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/frontend/api.md
+2026-01-07 10:13:35,526 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:35,687 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:35,997 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:36,173 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:36,357 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/postman.md
+2026-01-07 10:13:36,637 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2026-01-07 10:13:37,050 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/backend/postman.md, Duration: 227ms
+2026-01-07 10:13:37,214 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/backend/postman.md
+2026-01-07 10:13:37,381 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/postman.md
+2026-01-07 10:13:37,574 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:37,763 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:38,064 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:38,240 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:38,428 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/introduction.md
+2026-01-07 10:13:38,719 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 103ms
+2026-01-07 10:13:39,077 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/backend/introduction.md, Duration: 198ms
+2026-01-07 10:13:39,252 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/backend/introduction.md
+2026-01-07 10:13:39,424 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/introduction.md
+2026-01-07 10:13:39,609 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:39,795 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:39,996 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:40,175 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:40,328 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/generate-token.ts
+2026-01-07 10:13:40,587 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 110ms
+2026-01-07 10:13:41,137 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/utils/generate-token.ts, Duration: 371ms
+2026-01-07 10:13:41,309 - Knowledge - INFO - persist search terms embedding for apps/api/server/utils/generate-token.ts
+2026-01-07 10:13:41,477 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/generate-token.ts
+2026-01-07 10:13:41,676 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:41,825 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:42,061 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:42,233 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:42,388 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/package.json
+2026-01-07 10:13:42,658 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 89ms
+2026-01-07 10:13:43,061 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/package.json, Duration: 235ms
+2026-01-07 10:13:43,242 - Knowledge - INFO - persist search terms embedding for apps/api/package.json
+2026-01-07 10:13:43,406 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/package.json
+2026-01-07 10:13:43,577 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:43,733 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:44,003 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:44,155 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:44,369 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/index.put.ts
+2026-01-07 10:13:44,645 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-07 10:13:45,016 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/articles/[slug]/index.put.ts, Duration: 207ms
+2026-01-07 10:13:45,217 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/articles/[slug]/index.put.ts
+2026-01-07 10:13:45,390 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/index.put.ts
+2026-01-07 10:13:45,563 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:45,766 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:46,046 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:46,240 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:46,401 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/package.json
+2026-01-07 10:13:46,700 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 127ms
+2026-01-07 10:13:47,073 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/package.json, Duration: 212ms
+2026-01-07 10:13:47,244 - Knowledge - INFO - persist search terms embedding for apps/documentation/package.json
+2026-01-07 10:13:47,439 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/package.json
+2026-01-07 10:13:47,639 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:47,799 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:48,029 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:48,185 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:48,348 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/user.model.ts
+2026-01-07 10:13:48,639 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 105ms
+2026-01-07 10:13:49,086 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/models/user.model.ts, Duration: 241ms
+2026-01-07 10:13:49,238 - Knowledge - INFO - persist search terms embedding for apps/api/server/models/user.model.ts
+2026-01-07 10:13:49,393 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/user.model.ts
+2026-01-07 10:13:49,600 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:49,768 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:50,081 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:50,246 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:50,409 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/media/mobile_icons/ios/README.md
+2026-01-07 10:13:50,737 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 110ms
+2026-01-07 10:13:51,203 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: media/mobile_icons/ios/README.md, Duration: 266ms
+2026-01-07 10:13:51,381 - Knowledge - INFO - persist search terms embedding for media/mobile_icons/ios/README.md
+2026-01-07 10:13:51,543 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/media/mobile_icons/ios/README.md
+2026-01-07 10:13:51,741 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:51,931 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:52,173 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:52,330 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:52,509 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/config.ts
+2026-01-07 10:13:52,762 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 98ms
+2026-01-07 10:13:53,172 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/config.ts, Duration: 239ms
+2026-01-07 10:13:53,314 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/config.ts
+2026-01-07 10:13:53,466 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/config.ts
+2026-01-07 10:13:53,655 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:53,851 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:54,109 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:54,288 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:54,429 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/tailwind.config.mjs
+2026-01-07 10:13:54,687 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 89ms
+2026-01-07 10:13:55,143 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/tailwind.config.mjs, Duration: 269ms
+2026-01-07 10:13:55,382 - Knowledge - INFO - persist search terms embedding for apps/documentation/tailwind.config.mjs
+2026-01-07 10:13:55,541 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/tailwind.config.mjs
+2026-01-07 10:13:55,712 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:55,876 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:56,111 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:56,255 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:56,437 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/v2/profile/[id].put.ts
+2026-01-07 10:13:56,723 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 94ms
+2026-01-07 10:13:57,152 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/v2/profile/[id].put.ts, Duration: 258ms
+2026-01-07 10:13:57,305 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/v2/profile/[id].put.ts
+2026-01-07 10:13:57,482 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/v2/profile/[id].put.ts
+2026-01-07 10:13:57,639 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:57,788 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:58,114 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:58,270 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:13:58,433 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/favorite/index.post.ts
+2026-01-07 10:13:58,701 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-07 10:13:59,150 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/articles/[slug]/favorite/index.post.ts, Duration: 272ms
+2026-01-07 10:13:59,345 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/articles/[slug]/favorite/index.post.ts
+2026-01-07 10:13:59,550 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/favorite/index.post.ts
+2026-01-07 10:13:59,722 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:13:59,914 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:00,190 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:00,347 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:00,505 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/comments/index.get.ts
+2026-01-07 10:14:00,750 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 100ms
+2026-01-07 10:14:01,238 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/articles/[slug]/comments/index.get.ts, Duration: 318ms
+2026-01-07 10:14:01,454 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/articles/[slug]/comments/index.get.ts
+2026-01-07 10:14:01,632 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/comments/index.get.ts
+2026-01-07 10:14:01,800 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:01,961 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:02,189 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:02,371 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:02,574 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/comments/[id].delete.ts
+2026-01-07 10:14:02,811 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-07 10:14:03,254 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/articles/[slug]/comments/[id].delete.ts, Duration: 238ms
+2026-01-07 10:14:03,450 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/articles/[slug]/comments/[id].delete.ts
+2026-01-07 10:14:03,604 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/comments/[id].delete.ts
+2026-01-07 10:14:03,767 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:03,923 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:04,151 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:04,307 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:04,479 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/comment.model.ts
+2026-01-07 10:14:04,743 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2026-01-07 10:14:05,122 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/models/comment.model.ts, Duration: 219ms
+2026-01-07 10:14:05,315 - Knowledge - INFO - persist search terms embedding for apps/api/server/models/comment.model.ts
+2026-01-07 10:14:05,510 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/comment.model.ts
+2026-01-07 10:14:05,720 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:05,925 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:06,241 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:06,394 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:06,550 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/endpoints.md
+2026-01-07 10:14:06,809 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 88ms
+2026-01-07 10:14:07,201 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/backend/endpoints.md, Duration: 216ms
+2026-01-07 10:14:07,353 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/backend/endpoints.md
+2026-01-07 10:14:07,543 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/endpoints.md
+2026-01-07 10:14:07,707 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:07,868 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:08,118 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:08,295 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:08,478 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/MAINTENANCE.md
+2026-01-07 10:14:08,762 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 88ms
+2026-01-07 10:14:09,254 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: MAINTENANCE.md, Duration: 267ms
+2026-01-07 10:14:09,395 - Knowledge - INFO - persist search terms embedding for MAINTENANCE.md
+2026-01-07 10:14:09,574 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/MAINTENANCE.md
+2026-01-07 10:14:09,736 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:09,928 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:10,177 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:10,350 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:10,562 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/index.delete.ts
+2026-01-07 10:14:10,837 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 122ms
+2026-01-07 10:14:11,269 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/articles/[slug]/index.delete.ts, Duration: 227ms
+2026-01-07 10:14:11,451 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/articles/[slug]/index.delete.ts
+2026-01-07 10:14:11,613 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/index.delete.ts
+2026-01-07 10:14:11,782 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:11,949 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:12,188 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:12,342 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:12,511 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/implementation-creation/expectations.md
+2026-01-07 10:14:12,806 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2026-01-07 10:14:13,491 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/implementation-creation/expectations.md, Duration: 453ms
+2026-01-07 10:14:13,660 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/implementation-creation/expectations.md
+2026-01-07 10:14:13,857 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/implementation-creation/expectations.md
+2026-01-07 10:14:14,012 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:14,226 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:14,470 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:14,638 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:14,845 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/profile.model.ts
+2026-01-07 10:14:15,089 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-07 10:14:15,483 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/models/profile.model.ts, Duration: 232ms
+2026-01-07 10:14:15,620 - Knowledge - INFO - persist search terms embedding for apps/api/server/models/profile.model.ts
+2026-01-07 10:14:15,825 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/profile.model.ts
+2026-01-07 10:14:16,041 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:16,212 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:16,472 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:16,623 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:16,794 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/implementation-creation/features.md
+2026-01-07 10:14:17,067 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 98ms
+2026-01-07 10:14:17,499 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/implementation-creation/features.md, Duration: 282ms
+2026-01-07 10:14:17,669 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/implementation-creation/features.md
+2026-01-07 10:14:17,856 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/implementation-creation/features.md
+2026-01-07 10:14:18,015 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:18,197 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:18,441 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:18,630 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:18,799 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/media/mobile_icons/watchkit/AppIcon.appiconset/Contents.json
+2026-01-07 10:14:19,096 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 123ms
+2026-01-07 10:14:19,469 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: media/mobile_icons/watchkit/AppIcon.appiconset/Contents.json, Duration: 206ms
+2026-01-07 10:14:19,651 - Knowledge - INFO - persist search terms embedding for media/mobile_icons/watchkit/AppIcon.appiconset/Contents.json
+2026-01-07 10:14:19,831 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/media/mobile_icons/watchkit/AppIcon.appiconset/Contents.json
+2026-01-07 10:14:20,034 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:20,223 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:20,474 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:20,660 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:20,826 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/api/Conduit.postman_collection.json
+2026-01-07 10:14:21,124 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 111ms
+2026-01-07 10:14:21,504 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: api/Conduit.postman_collection.json, Duration: 188ms
+2026-01-07 10:14:21,666 - Knowledge - INFO - persist search terms embedding for api/Conduit.postman_collection.json
+2026-01-07 10:14:21,844 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/api/Conduit.postman_collection.json
+2026-01-07 10:14:22,006 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:22,206 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:22,438 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:22,612 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:22,790 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/frontend/styles.md
+2026-01-07 10:14:23,084 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2026-01-07 10:14:23,493 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/frontend/styles.md, Duration: 240ms
+2026-01-07 10:14:23,684 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/frontend/styles.md
+2026-01-07 10:14:23,867 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/frontend/styles.md
+2026-01-07 10:14:24,070 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:24,298 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:24,542 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:24,725 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:24,905 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/api-response-format.md
+2026-01-07 10:14:25,204 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-07 10:14:25,588 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/backend/api-response-format.md, Duration: 182ms
+2026-01-07 10:14:25,804 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/backend/api-response-format.md
+2026-01-07 10:14:25,987 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/api-response-format.md
+2026-01-07 10:14:26,160 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:26,339 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:26,573 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:26,737 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:26,915 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/comments/index.post.ts
+2026-01-07 10:14:27,159 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 100ms
+2026-01-07 10:14:27,659 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/articles/[slug]/comments/index.post.ts, Duration: 345ms
+2026-01-07 10:14:27,826 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/articles/[slug]/comments/index.post.ts
+2026-01-07 10:14:27,987 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/comments/index.post.ts
+2026-01-07 10:14:28,162 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:28,348 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:28,649 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:28,817 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:29,034 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/error-handling.md
+2026-01-07 10:14:29,318 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2026-01-07 10:14:29,775 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/backend/error-handling.md, Duration: 244ms
+2026-01-07 10:14:29,927 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/backend/error-handling.md
+2026-01-07 10:14:30,070 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/error-handling.md
+2026-01-07 10:14:30,257 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:30,427 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:30,690 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:30,868 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:31,038 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/profiles/[username]/follow/index.delete.ts
+2026-01-07 10:14:31,323 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-07 10:14:31,829 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/profiles/[username]/follow/index.delete.ts, Duration: 299ms
+2026-01-07 10:14:32,000 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/profiles/[username]/follow/index.delete.ts
+2026-01-07 10:14:32,181 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/profiles/[username]/follow/index.delete.ts
+2026-01-07 10:14:32,341 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:32,497 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:32,763 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:32,952 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:33,102 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/api/README.md
+2026-01-07 10:14:33,349 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-07 10:14:33,759 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: api/README.md, Duration: 227ms
+2026-01-07 10:14:33,938 - Knowledge - INFO - persist search terms embedding for api/README.md
+2026-01-07 10:14:34,157 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/api/README.md
+2026-01-07 10:14:34,393 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:34,572 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:34,883 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:35,091 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:35,251 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/media/mobile_icons/ios/AppIcon.appiconset/Contents.json
+2026-01-07 10:14:35,507 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 110ms
+2026-01-07 10:14:36,083 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: media/mobile_icons/ios/AppIcon.appiconset/Contents.json, Duration: 328ms
+2026-01-07 10:14:36,290 - Knowledge - INFO - persist search terms embedding for media/mobile_icons/ios/AppIcon.appiconset/Contents.json
+2026-01-07 10:14:36,469 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/media/mobile_icons/ios/AppIcon.appiconset/Contents.json
+2026-01-07 10:14:36,695 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:36,888 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:37,156 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:37,355 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:37,511 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/v2/auth/login.post.ts
+2026-01-07 10:14:37,818 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2026-01-07 10:14:38,222 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/v2/auth/login.post.ts, Duration: 206ms
+2026-01-07 10:14:38,415 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/v2/auth/login.post.ts
+2026-01-07 10:14:38,580 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/v2/auth/login.post.ts
+2026-01-07 10:14:38,793 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:38,972 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:39,242 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:39,403 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:39,566 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/tailwind.css
+2026-01-07 10:14:39,885 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 89ms
+2026-01-07 10:14:40,248 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/tailwind.css, Duration: 186ms
+2026-01-07 10:14:40,425 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/tailwind.css
+2026-01-07 10:14:40,588 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/tailwind.css
+2026-01-07 10:14:40,754 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:40,949 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:41,165 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:41,357 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:41,508 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/article.mapper.ts
+2026-01-07 10:14:41,747 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 83ms
+2026-01-07 10:14:42,169 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/utils/article.mapper.ts, Duration: 266ms
+2026-01-07 10:14:42,318 - Knowledge - INFO - persist search terms embedding for apps/api/server/utils/article.mapper.ts
+2026-01-07 10:14:42,513 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/article.mapper.ts
+2026-01-07 10:14:42,672 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:42,844 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:43,135 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:43,287 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:43,431 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/api/run-api-tests.sh
+2026-01-07 10:14:43,676 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-07 10:14:44,100 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: api/run-api-tests.sh, Duration: 231ms
+2026-01-07 10:14:44,279 - Knowledge - INFO - persist search terms embedding for api/run-api-tests.sh
+2026-01-07 10:14:44,448 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/api/run-api-tests.sh
+2026-01-07 10:14:44,600 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:44,752 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:45,050 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:45,216 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:45,380 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/user/index.put.ts
+2026-01-07 10:14:45,675 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-07 10:14:46,320 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/user/index.put.ts, Duration: 425ms
+2026-01-07 10:14:46,475 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/user/index.put.ts
+2026-01-07 10:14:46,659 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/user/index.put.ts
+2026-01-07 10:14:46,804 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:46,966 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:47,210 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:47,360 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:47,517 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/frontend/routing.md
+2026-01-07 10:14:47,806 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 97ms
+2026-01-07 10:14:48,196 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/frontend/routing.md, Duration: 221ms
+2026-01-07 10:14:48,341 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/frontend/routing.md
+2026-01-07 10:14:48,521 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/frontend/routing.md
+2026-01-07 10:14:48,730 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:48,933 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:49,198 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:49,361 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:49,563 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/community/authors.md
+2026-01-07 10:14:49,843 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 104ms
+2026-01-07 10:14:50,226 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/community/authors.md, Duration: 200ms
+2026-01-07 10:14:50,372 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/community/authors.md
+2026-01-07 10:14:50,539 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/community/authors.md
+2026-01-07 10:14:50,734 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:50,932 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:51,192 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:51,353 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:51,538 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/users/index.post.ts
+2026-01-07 10:14:51,780 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2026-01-07 10:14:52,130 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/users/index.post.ts, Duration: 187ms
+2026-01-07 10:14:52,289 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/users/index.post.ts
+2026-01-07 10:14:52,470 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/users/index.post.ts
+2026-01-07 10:14:52,684 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:52,858 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:53,130 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:53,308 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:53,501 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/nitro.config.ts
+2026-01-07 10:14:53,774 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 101ms
+2026-01-07 10:14:54,419 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/nitro.config.ts, Duration: 476ms
+2026-01-07 10:14:54,593 - Knowledge - INFO - persist search terms embedding for apps/api/nitro.config.ts
+2026-01-07 10:14:54,737 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/nitro.config.ts
+2026-01-07 10:14:54,977 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:55,130 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:55,351 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:55,543 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:55,688 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/favorite/index.delete.ts
+2026-01-07 10:14:56,003 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-07 10:14:56,426 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/articles/[slug]/favorite/index.delete.ts, Duration: 242ms
+2026-01-07 10:14:56,599 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/articles/[slug]/favorite/index.delete.ts
+2026-01-07 10:14:56,766 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/favorite/index.delete.ts
+2026-01-07 10:14:56,989 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:57,172 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:57,464 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:57,643 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:57,805 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/profiles/[username]/index.get.ts
+2026-01-07 10:14:58,101 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 116ms
+2026-01-07 10:14:58,509 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/profiles/[username]/index.get.ts, Duration: 247ms
+2026-01-07 10:14:58,663 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/profiles/[username]/index.get.ts
+2026-01-07 10:14:58,818 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/profiles/[username]/index.get.ts
+2026-01-07 10:14:59,038 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:59,245 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:59,477 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:14:59,647 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:14:59,800 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/tests.md
+2026-01-07 10:15:00,084 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 102ms
+2026-01-07 10:15:00,536 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/backend/tests.md, Duration: 232ms
+2026-01-07 10:15:00,742 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/backend/tests.md
+2026-01-07 10:15:00,882 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/tests.md
+2026-01-07 10:15:01,050 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:01,298 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:01,549 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:01,713 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:01,898 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/astro.config.mjs
+2026-01-07 10:15:02,209 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 111ms
+2026-01-07 10:15:02,620 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/astro.config.mjs, Duration: 253ms
+2026-01-07 10:15:02,776 - Knowledge - INFO - persist search terms embedding for apps/documentation/astro.config.mjs
+2026-01-07 10:15:02,975 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/astro.config.mjs
+2026-01-07 10:15:03,139 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:03,328 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:03,599 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:03,757 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:03,919 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/tsconfig.json
+2026-01-07 10:15:04,195 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 100ms
+2026-01-07 10:15:04,692 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/tsconfig.json, Duration: 304ms
+2026-01-07 10:15:04,859 - Knowledge - INFO - persist search terms embedding for apps/documentation/tsconfig.json
+2026-01-07 10:15:05,015 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/tsconfig.json
+2026-01-07 10:15:05,193 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:05,358 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:05,606 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:05,791 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:05,985 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/auth.ts
+2026-01-07 10:15:06,229 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 90ms
+2026-01-07 10:15:06,616 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/utils/auth.ts, Duration: 212ms
+2026-01-07 10:15:06,806 - Knowledge - INFO - persist search terms embedding for apps/api/server/utils/auth.ts
+2026-01-07 10:15:07,011 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/auth.ts
+2026-01-07 10:15:07,175 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:07,334 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:07,555 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:07,735 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:07,929 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/tsconfig.json
+2026-01-07 10:15:08,185 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-07 10:15:08,584 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/tsconfig.json, Duration: 218ms
+2026-01-07 10:15:08,766 - Knowledge - INFO - persist search terms embedding for apps/api/tsconfig.json
+2026-01-07 10:15:08,923 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/tsconfig.json
+2026-01-07 10:15:09,129 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:09,323 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:09,605 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:09,790 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:09,993 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/README.md
+2026-01-07 10:15:10,280 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 120ms
+2026-01-07 10:15:10,701 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/README.md, Duration: 245ms
+2026-01-07 10:15:10,889 - Knowledge - INFO - persist search terms embedding for apps/documentation/README.md
+2026-01-07 10:15:11,030 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/README.md
+2026-01-07 10:15:11,227 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:11,419 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:11,742 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:11,924 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:12,088 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/README.md
+2026-01-07 10:15:12,323 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 89ms
+2026-01-07 10:15:12,712 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/README.md, Duration: 206ms
+2026-01-07 10:15:12,901 - Knowledge - INFO - persist search terms embedding for apps/api/README.md
+2026-01-07 10:15:13,047 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/README.md
+2026-01-07 10:15:13,246 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:13,402 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:13,699 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:13,877 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:14,025 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/feed.get.ts
+2026-01-07 10:15:14,337 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-07 10:15:14,865 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/articles/feed.get.ts, Duration: 338ms
+2026-01-07 10:15:15,025 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/articles/feed.get.ts
+2026-01-07 10:15:15,193 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/feed.get.ts
+2026-01-07 10:15:15,375 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:15,521 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:15,764 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:15,948 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:16,098 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/frontend/tests.md
+2026-01-07 10:15:16,348 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-07 10:15:16,934 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/frontend/tests.md, Duration: 378ms
+2026-01-07 10:15:17,145 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/frontend/tests.md
+2026-01-07 10:15:17,304 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/frontend/tests.md
+2026-01-07 10:15:17,469 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:17,670 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:17,943 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:18,115 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:18,281 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/profiles/[username]/follow/index.post.ts
+2026-01-07 10:15:18,587 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 121ms
+2026-01-07 10:15:19,019 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/profiles/[username]/follow/index.post.ts, Duration: 218ms
+2026-01-07 10:15:19,210 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/profiles/[username]/follow/index.post.ts
+2026-01-07 10:15:19,405 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/profiles/[username]/follow/index.post.ts
+2026-01-07 10:15:19,577 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:19,734 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:19,977 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:20,149 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:20,342 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/http-exception.model.ts
+2026-01-07 10:15:20,622 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 117ms
+2026-01-07 10:15:21,088 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/models/http-exception.model.ts, Duration: 248ms
+2026-01-07 10:15:21,264 - Knowledge - INFO - persist search terms embedding for apps/api/server/models/http-exception.model.ts
+2026-01-07 10:15:21,448 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/http-exception.model.ts
+2026-01-07 10:15:21,604 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:21,766 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:21,999 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:22,153 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:22,355 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/cors.md
+2026-01-07 10:15:22,609 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-07 10:15:23,059 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/backend/cors.md, Duration: 296ms
+2026-01-07 10:15:23,225 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/backend/cors.md
+2026-01-07 10:15:23,389 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/backend/cors.md
+2026-01-07 10:15:23,572 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:23,762 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:24,033 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:24,237 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:24,430 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/user/index.get.ts
+2026-01-07 10:15:24,697 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2026-01-07 10:15:25,146 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/user/index.get.ts, Duration: 214ms
+2026-01-07 10:15:25,299 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/user/index.get.ts
+2026-01-07 10:15:25,482 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/user/index.get.ts
+2026-01-07 10:15:25,634 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:25,832 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:26,071 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:26,240 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:26,438 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/tag.model.ts
+2026-01-07 10:15:26,713 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 94ms
+2026-01-07 10:15:27,117 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/models/tag.model.ts, Duration: 235ms
+2026-01-07 10:15:27,285 - Knowledge - INFO - persist search terms embedding for apps/api/server/models/tag.model.ts
+2026-01-07 10:15:27,471 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/tag.model.ts
+2026-01-07 10:15:27,658 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:27,815 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:28,134 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:28,290 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:28,452 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/frontend/templates.md
+2026-01-07 10:15:28,699 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 89ms
+2026-01-07 10:15:29,133 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/frontend/templates.md, Duration: 271ms
+2026-01-07 10:15:29,285 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/frontend/templates.md
+2026-01-07 10:15:29,455 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/frontend/templates.md
+2026-01-07 10:15:29,624 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:29,817 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:30,067 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:30,254 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:30,411 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/tags/index.get.ts
+2026-01-07 10:15:30,685 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 94ms
+2026-01-07 10:15:31,146 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/tags/index.get.ts, Duration: 287ms
+2026-01-07 10:15:31,360 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/tags/index.get.ts
+2026-01-07 10:15:31,553 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/tags/index.get.ts
+2026-01-07 10:15:31,769 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:31,972 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:32,222 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:32,414 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:32,584 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/assets/swagger.json
+2026-01-07 10:15:32,853 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-07 10:15:33,268 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/assets/swagger.json, Duration: 226ms
+2026-01-07 10:15:33,430 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/assets/swagger.json
+2026-01-07 10:15:33,627 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/assets/swagger.json
+2026-01-07 10:15:33,844 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:33,997 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:34,236 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:34,406 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:34,569 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/api/openapi.yml
+2026-01-07 10:15:34,882 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 90ms
+2026-01-07 10:15:35,269 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: api/openapi.yml, Duration: 212ms
+2026-01-07 10:15:35,423 - Knowledge - INFO - persist search terms embedding for api/openapi.yml
+2026-01-07 10:15:35,617 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/api/openapi.yml
+2026-01-07 10:15:35,801 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:35,974 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:36,239 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:36,381 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:36,526 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/README.md
+2026-01-07 10:15:36,799 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-07 10:15:37,209 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: README.md, Duration: 216ms
+2026-01-07 10:15:37,376 - Knowledge - INFO - persist search terms embedding for README.md
+2026-01-07 10:15:37,540 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/README.md
+2026-01-07 10:15:37,723 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:37,924 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:38,175 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:38,361 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:38,521 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/implementation-creation/introduction.md
+2026-01-07 10:15:38,787 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 103ms
+2026-01-07 10:15:39,207 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/implementation-creation/introduction.md, Duration: 237ms
+2026-01-07 10:15:39,369 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/implementation-creation/introduction.md
+2026-01-07 10:15:39,539 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/implementation-creation/introduction.md
+2026-01-07 10:15:39,725 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:39,920 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:40,171 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:40,350 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:40,544 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/prisma/seed.ts
+2026-01-07 10:15:40,812 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 110ms
+2026-01-07 10:15:41,234 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/prisma/seed.ts, Duration: 219ms
+2026-01-07 10:15:41,404 - Knowledge - INFO - persist search terms embedding for apps/api/prisma/seed.ts
+2026-01-07 10:15:41,590 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/prisma/seed.ts
+2026-01-07 10:15:41,771 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:41,960 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:42,195 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:42,355 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:42,527 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/[...].options.ts
+2026-01-07 10:15:42,818 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 104ms
+2026-01-07 10:15:43,191 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/[...].options.ts, Duration: 221ms
+2026-01-07 10:15:43,392 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/[...].options.ts
+2026-01-07 10:15:43,555 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/[...].options.ts
+2026-01-07 10:15:43,740 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:43,959 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:44,238 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:44,403 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:44,564 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/index.get.ts
+2026-01-07 10:15:44,833 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 94ms
+2026-01-07 10:15:45,281 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/articles/index.get.ts, Duration: 227ms
+2026-01-07 10:15:45,435 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/articles/index.get.ts
+2026-01-07 10:15:45,569 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/index.get.ts
+2026-01-07 10:15:45,783 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:45,983 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:46,260 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:46,427 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:46,611 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/prisma/migrations/20241009081140_init/migration.sql
+2026-01-07 10:15:46,915 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 112ms
+2026-01-07 10:15:47,332 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/prisma/migrations/20241009081140_init/migration.sql, Duration: 267ms
+2026-01-07 10:15:47,492 - Knowledge - INFO - persist search terms embedding for apps/api/prisma/migrations/20241009081140_init/migration.sql
+2026-01-07 10:15:47,698 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/prisma/migrations/20241009081140_init/migration.sql
+2026-01-07 10:15:47,893 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:48,116 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:48,355 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:48,507 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:48,692 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/author.mapper.ts
+2026-01-07 10:15:48,960 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 85ms
+2026-01-07 10:15:49,470 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/utils/author.mapper.ts, Duration: 324ms
+2026-01-07 10:15:49,634 - Knowledge - INFO - persist search terms embedding for apps/api/server/utils/author.mapper.ts
+2026-01-07 10:15:49,800 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/author.mapper.ts
+2026-01-07 10:15:49,968 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:50,134 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:50,396 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:50,551 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:50,716 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/article.model.ts
+2026-01-07 10:15:50,966 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-07 10:15:51,314 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/models/article.model.ts, Duration: 185ms
+2026-01-07 10:15:51,470 - Knowledge - INFO - persist search terms embedding for apps/api/server/models/article.model.ts
+2026-01-07 10:15:51,692 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/models/article.model.ts
+2026-01-07 10:15:51,886 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:52,050 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:52,317 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:52,492 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:52,684 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/v2/auth/signup.post.ts
+2026-01-07 10:15:52,958 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 85ms
+2026-01-07 10:15:53,411 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/v2/auth/signup.post.ts, Duration: 250ms
+2026-01-07 10:15:53,580 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/v2/auth/signup.post.ts
+2026-01-07 10:15:53,777 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/v2/auth/signup.post.ts
+2026-01-07 10:15:53,933 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:54,131 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:54,357 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:54,523 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:54,717 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/auth-event-handler.ts
+2026-01-07 10:15:54,978 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 103ms
+2026-01-07 10:15:55,450 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/auth-event-handler.ts, Duration: 304ms
+2026-01-07 10:15:55,615 - Knowledge - INFO - persist search terms embedding for apps/api/server/auth-event-handler.ts
+2026-01-07 10:15:55,808 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/auth-event-handler.ts
+2026-01-07 10:15:56,014 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:56,195 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:56,463 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:56,649 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:56,885 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/community/resources.md
+2026-01-07 10:15:57,200 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 133ms
+2026-01-07 10:15:57,680 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/community/resources.md, Duration: 307ms
+2026-01-07 10:15:57,883 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/community/resources.md
+2026-01-07 10:15:58,053 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/community/resources.md
+2026-01-07 10:15:58,224 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:58,380 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:58,635 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:15:58,818 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:15:58,981 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/index.post.ts
+2026-01-07 10:15:59,276 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 115ms
+2026-01-07 10:15:59,683 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/articles/index.post.ts, Duration: 250ms
+2026-01-07 10:15:59,878 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/articles/index.post.ts
+2026-01-07 10:16:00,050 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/index.post.ts
+2026-01-07 10:16:00,216 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:00,399 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:00,657 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:00,822 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:00,992 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/prisma.ts
+2026-01-07 10:16:01,256 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 110ms
+2026-01-07 10:16:01,748 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/utils/prisma.ts, Duration: 340ms
+2026-01-07 10:16:01,945 - Knowledge - INFO - persist search terms embedding for apps/api/server/utils/prisma.ts
+2026-01-07 10:16:02,117 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/prisma.ts
+2026-01-07 10:16:02,303 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:02,459 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:02,693 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:02,861 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:03,007 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/env.d.ts
+2026-01-07 10:16:03,275 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2026-01-07 10:16:03,640 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/env.d.ts, Duration: 197ms
+2026-01-07 10:16:03,802 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/env.d.ts
+2026-01-07 10:16:03,968 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/env.d.ts
+2026-01-07 10:16:04,150 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:04,324 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:04,652 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:04,807 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:04,991 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/v2/profile/[id].get.ts
+2026-01-07 10:16:05,277 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 98ms
+2026-01-07 10:16:05,672 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/v2/profile/[id].get.ts, Duration: 202ms
+2026-01-07 10:16:05,839 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/v2/profile/[id].get.ts
+2026-01-07 10:16:06,049 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/v2/profile/[id].get.ts
+2026-01-07 10:16:06,231 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:06,378 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:06,609 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:06,768 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:06,974 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/foo.ts
+2026-01-07 10:16:07,233 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-07 10:16:07,688 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/utils/foo.ts, Duration: 282ms
+2026-01-07 10:16:07,853 - Knowledge - INFO - persist search terms embedding for apps/api/server/utils/foo.ts
+2026-01-07 10:16:08,038 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/foo.ts
+2026-01-07 10:16:08,229 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:08,402 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:08,643 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:08,803 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:09,031 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/hash-password.ts
+2026-01-07 10:16:09,309 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 94ms
+2026-01-07 10:16:09,732 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/utils/hash-password.ts, Duration: 220ms
+2026-01-07 10:16:09,944 - Knowledge - INFO - persist search terms embedding for apps/api/server/utils/hash-password.ts
+2026-01-07 10:16:10,129 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/hash-password.ts
+2026-01-07 10:16:10,301 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:10,494 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:10,801 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:10,960 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:11,107 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/mobile-specs/introduction.md
+2026-01-07 10:16:11,355 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 98ms
+2026-01-07 10:16:11,749 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/specifications/mobile-specs/introduction.md, Duration: 213ms
+2026-01-07 10:16:11,915 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/specifications/mobile-specs/introduction.md
+2026-01-07 10:16:12,079 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/specifications/mobile-specs/introduction.md
+2026-01-07 10:16:12,257 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:12,440 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:12,664 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:12,822 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:13,000 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/CONTRIBUTING.md
+2026-01-07 10:16:13,278 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 89ms
+2026-01-07 10:16:13,734 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: CONTRIBUTING.md, Duration: 212ms
+2026-01-07 10:16:13,876 - Knowledge - INFO - persist search terms embedding for CONTRIBUTING.md
+2026-01-07 10:16:14,068 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/CONTRIBUTING.md
+2026-01-07 10:16:14,236 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:14,405 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:14,675 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:14,849 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:15,051 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/profile.utils.ts
+2026-01-07 10:16:15,303 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 90ms
+2026-01-07 10:16:15,688 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/utils/profile.utils.ts, Duration: 220ms
+2026-01-07 10:16:15,847 - Knowledge - INFO - persist search terms embedding for apps/api/server/utils/profile.utils.ts
+2026-01-07 10:16:16,041 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/utils/profile.utils.ts
+2026-01-07 10:16:16,194 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:16,434 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:16,689 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:16,874 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:17,033 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/v2/auth/logout.post.ts
+2026-01-07 10:16:17,283 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-07 10:16:17,856 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/v2/auth/logout.post.ts, Duration: 403ms
+2026-01-07 10:16:18,038 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/v2/auth/logout.post.ts
+2026-01-07 10:16:18,242 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/v2/auth/logout.post.ts
+2026-01-07 10:16:18,428 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:18,671 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:18,939 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:19,144 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:19,323 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/users/login.post.ts
+2026-01-07 10:16:19,581 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 88ms
+2026-01-07 10:16:19,949 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/users/login.post.ts, Duration: 213ms
+2026-01-07 10:16:20,173 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/users/login.post.ts
+2026-01-07 10:16:20,366 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/users/login.post.ts
+2026-01-07 10:16:20,533 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:20,735 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:21,015 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:21,214 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:21,369 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/community/special-thanks.md
+2026-01-07 10:16:21,672 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 104ms
+2026-01-07 10:16:22,149 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/documentation/src/content/docs/community/special-thanks.md, Duration: 324ms
+2026-01-07 10:16:22,362 - Knowledge - INFO - persist search terms embedding for apps/documentation/src/content/docs/community/special-thanks.md
+2026-01-07 10:16:22,521 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/documentation/src/content/docs/community/special-thanks.md
+2026-01-07 10:16:22,684 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:22,875 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:23,123 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:23,288 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:23,496 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/prisma/migrations/migration_lock.toml
+2026-01-07 10:16:23,728 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 90ms
+2026-01-07 10:16:24,108 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/prisma/migrations/migration_lock.toml, Duration: 195ms
+2026-01-07 10:16:24,270 - Knowledge - INFO - persist search terms embedding for apps/api/prisma/migrations/migration_lock.toml
+2026-01-07 10:16:24,427 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/prisma/migrations/migration_lock.toml
+2026-01-07 10:16:24,598 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:24,819 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:25,098 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/realworld-303342.git:kavia-main
+2026-01-07 10:16:25,283 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f95bc5c7550>
+2026-01-07 10:16:25,505 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/index.get.ts
+2026-01-07 10:16:25,754 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-07 10:16:26,164 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: apps/api/server/routes/api/articles/[slug]/index.get.ts, Duration: 220ms
+2026-01-07 10:16:26,350 - Knowledge - INFO - persist search terms embedding for apps/api/server/routes/api/articles/[slug]/index.get.ts
+2026-01-07 10:16:26,507 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/303342/b9834xv/realworld-303342/apps/api/server/routes/api/articles/[slug]/index.get.ts
+2026-01-07 10:16:26,652 - Knowledge - INFO - Loaded 85 files from persisted knowledge
+2026-01-07 10:16:26,830 - Knowledge - INFO - load persisted knowledge: end
+2026-01-07 10:16:27,037 - Knowledge - INFO - Redis support added with prefix knowledge:b9834xv:
+2026-01-07 10:16:27,477 - Knowledge - INFO - Starting knowledge initialization for ID: 8FFjYW-b9834xv
+2026-01-07 10:16:27,620 - Knowledge - INFO - 🔍 Checking Redis for build_id: b9834xv
+2026-01-07 10:16:27,809 - Knowledge - INFO - 🔍 Full session ID: 8FFjYW-b9834xv
+2026-01-07 10:16:28,014 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b9834xv:
+2026-01-07 10:16:28,186 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-01-07 10:16:28,385 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-07 10:16:28,578 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b9834xv
+2026-01-07 10:16:28,823 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2026-01-07 10:16:28,994 - Knowledge - INFO - ✅ Successfully loaded from Redis: 85 files
+2026-01-07 10:16:29,137 - Knowledge - INFO - ✅ Redis load complete: 85 files in 0.95s
+2026-01-07 10:16:29,286 - Knowledge - INFO - ⚡ Total Redis path: 0.95s (vs ~300s from disk)
+2026-01-07 10:16:29,495 - Knowledge - INFO - Saving knowledge to Redis...
+2026-01-07 10:16:29,728 - Knowledge - INFO - Knowledge saved to Redis successfully
