@@ -1,5 +1,6 @@
 import HttpException from "~/models/http-exception.model";
 import { default as bcrypt } from "bcryptjs";
+import { validateUserRegistrationBody } from "~/utils/validation";
 
 export default defineEventHandler(async (event) => {
     const startMs = Date.now();
@@ -11,12 +12,23 @@ export default defineEventHandler(async (event) => {
     });
 
     try {
-        const { user } = await readBody(event);
+        const body = await readBody(event);
 
-        const email = user.email?.trim();
-        const username = user.username?.trim();
-        const password = user.password?.trim();
-        const { image, bio, demo } = user;
+        // Schema-ish validation with predictable error body:
+        // - 422 Unprocessable Entity
+        // - { errors: { field: [message] } }
+        const validated = validateUserRegistrationBody(body);
+        if (!validated.ok) {
+            console.warn("[api]", {
+                event: "registration_validation_failed",
+                route,
+                reason: "invalid_body",
+                fields: Object.keys(validated.errors),
+            });
+            throw new HttpException(422, { errors: validated.errors });
+        }
+
+        const { email, username, password, image, bio, demo } = validated.value;
 
         // Do not log request bodies or passwords. Keep identifiers minimal.
         console.info("[api]", {
@@ -25,33 +37,6 @@ export default defineEventHandler(async (event) => {
             email: email ?? null,
             username: username ?? null,
         });
-
-        if (!email) {
-            console.warn("[api]", {
-                event: "registration_validation_failed",
-                route,
-                reason: "missing_email",
-            });
-            throw new HttpException(422, { errors: { email: ["can't be blank"] } });
-        }
-
-        if (!username) {
-            console.warn("[api]", {
-                event: "registration_validation_failed",
-                route,
-                reason: "missing_username",
-            });
-            throw new HttpException(422, { errors: { username: ["can't be blank"] } });
-        }
-
-        if (!password) {
-            console.warn("[api]", {
-                event: "registration_validation_failed",
-                route,
-                reason: "missing_password",
-            });
-            throw new HttpException(422, { errors: { password: ["can't be blank"] } });
-        }
 
         await checkUserUniqueness(email, username);
 
