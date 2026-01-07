@@ -1,51 +1,88 @@
 import profileMapper from "~/utils/profile.utils";
-import {Tag} from "~/models/tag.model";
-import {definePrivateEventHandler} from "~/auth-event-handler";
+import { Tag } from "~/models/tag.model";
+import { definePrivateEventHandler } from "~/auth-event-handler";
 
-export default definePrivateEventHandler(async (event, {auth}) => {
+export default definePrivateEventHandler(async (event, { auth }) => {
+    const startMs = Date.now();
+    const route = "DELETE /api/articles/:slug/favorite";
     const slug = getRouterParam(event, "slug");
 
-    const { _count, ...article } = await usePrisma().article.update({
-        where: {
-            slug,
-        },
-        data: {
-            favoritedBy: {
-                disconnect: {
-                    id: auth.id,
-                },
-            },
-        },
-        include: {
-            tagList: {
-                select: {
-                    name: true,
-                },
-            },
-            author: {
-                select: {
-                    username: true,
-                    bio: true,
-                    image: true,
-                    followedBy: true,
-                },
-            },
-            favoritedBy: true,
-            _count: {
-                select: {
-                    favoritedBy: true,
-                },
-            },
-        },
+    console.info("[api]", {
+        event: "request_start",
+        route,
     });
 
-    const result = {
-        ...article,
-        author: profileMapper(article.author, auth.id),
-        tagList: article?.tagList.map((tag: Tag) => tag.name),
-        favorited: article.favoritedBy.some((favorited: any) => favorited.id === auth.id),
-        favoritesCount: _count?.favoritedBy,
-    };
+    try {
+        console.info("[api]", {
+            event: "article_unfavorite_attempt",
+            route,
+            slug,
+            userId: auth.id,
+        });
 
-    return {article: result};
+        const { _count, ...article } = await usePrisma().article.update({
+            where: {
+                slug,
+            },
+            data: {
+                favoritedBy: {
+                    disconnect: {
+                        id: auth.id,
+                    },
+                },
+            },
+            include: {
+                tagList: {
+                    select: {
+                        name: true,
+                    },
+                },
+                author: {
+                    select: {
+                        username: true,
+                        bio: true,
+                        image: true,
+                        followedBy: true,
+                    },
+                },
+                favoritedBy: true,
+                _count: {
+                    select: {
+                        favoritedBy: true,
+                    },
+                },
+            },
+        });
+
+        const result = {
+            ...article,
+            author: profileMapper(article.author, auth.id),
+            tagList: article?.tagList.map((tag: Tag) => tag.name),
+            favorited: article.favoritedBy.some((favorited: any) => favorited.id === auth.id),
+            favoritesCount: _count?.favoritedBy,
+        };
+
+        console.info("[api]", {
+            event: "article_unfavorite_success",
+            route,
+            slug,
+            userId: auth.id,
+        });
+
+        return { article: result };
+    } catch (err: any) {
+        console.error("[api]", {
+            event: "request_error",
+            route,
+            status: err?.statusCode ?? err?.status ?? undefined,
+            message: err?.message,
+        });
+        throw err;
+    } finally {
+        console.info("[api]", {
+            event: "request_end",
+            route,
+            durationMs: Date.now() - startMs,
+        });
+    }
 });
